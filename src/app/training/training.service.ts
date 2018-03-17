@@ -12,7 +12,12 @@ export class TrainingService {
   ];
 
   private runningExercise: Exercise;
-  private exercises: Exercise[] = [];
+  private exercises: Exercise[] = [
+    { id: 'crunches', name: 'Crunches', duration: 30, calories: 8, date: new Date(), state: 'completed' },
+    { id: 'touch-toes', name: 'Touch Toes', duration: 180, calories: 15, date: new Date(), state: 'completed' },
+    { id: 'side-lunges', name: 'Side Lunges', duration: 120, calories: 18, date: new Date(), state: 'completed' },
+    { id: 'burpees', name: 'Burpees', duration: 60, calories: 8, date: new Date(), state: 'completed' }
+  ];
 
   getAvailableExercises() {
     return this.availableExercises.slice();
