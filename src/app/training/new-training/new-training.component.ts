@@ -6,7 +6,7 @@ import { Store } from '@ngrx/store';
 
 import { Exercise } from '../exercise.model';
 import { TrainingService } from '../training.service';
-import { UiService } from '../../shared/ui.service.service';
+import { UiService } from '../../shared/ui.service';
 import * as fromRoot from '../../app.reducer';
 
 @Component({

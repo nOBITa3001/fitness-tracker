@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
 import { AuthService } from '../auth.service';
-import { UiService } from '../../shared/ui.service.service';
+import { UiService } from '../../shared/ui.service';
 import * as fromRoot from '../../app.reducer';
 
 @Component({

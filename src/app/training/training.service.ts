@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs/Subscription';
 import { Store } from '@ngrx/store';
 
 import { Exercise } from './exercise.model';
-import { UiService } from '../shared/ui.service.service';
+import { UiService } from '../shared/ui.service';
 import * as UI from '../shared/ui.actions';
 import * as fromRoot from '../app.reducer';
 
