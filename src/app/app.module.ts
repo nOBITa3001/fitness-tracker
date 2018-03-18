@@ -15,7 +15,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { AuthService } from './auth/auth.service';
 import { TrainingService } from './training/training.service';
 import { environment } from '../environments/environment';
-import { UiService } from './auth/shared/ui.service.service';
+import { UiService } from './shared/ui.service.service';
 import { AuthModule } from './auth/auth.module';
 import { appReducer } from './app.reducer';
 

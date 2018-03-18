@@ -3,7 +3,7 @@ import { Exercise } from '../exercise.model';
 import { TrainingService } from '../training.service';
 import { NgForm } from '@angular/forms';
 import { Subscription } from 'rxjs/Subscription';
-import { UiService } from '../../auth/shared/ui.service.service';
+import { UiService } from '../../shared/ui.service.service';
 
 @Component({
   selector: 'app-new-training',

@@ -3,7 +3,7 @@ import { Subject } from 'rxjs/Subject';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { Injectable } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
-import { UiService } from '../auth/shared/ui.service.service';
+import { UiService } from '../shared/ui.service.service';
 
 @Injectable()
 export class TrainingService {

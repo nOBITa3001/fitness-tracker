@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '../auth.service';
 import { Subscription } from 'rxjs/Subscription';
-import { UiService } from '../shared/ui.service.service';
+import { UiService } from '../../shared/ui.service.service';
 
 @Component({
   selector: 'app-signup',

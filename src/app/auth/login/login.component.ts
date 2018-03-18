@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 import { Store } from '@ngrx/store';
 
 import { AuthService } from '../auth.service';
-import { UiService } from '../shared/ui.service.service';
+import { UiService } from '../../shared/ui.service.service';
 import * as fromApp from '../../app.reducer';
 
 @Component({
