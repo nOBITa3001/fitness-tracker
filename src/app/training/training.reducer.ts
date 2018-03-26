@@ -1,4 +1,8 @@
-import { Action } from '@ngrx/store';
+import {
+  Action,
+  createFeatureSelector,
+  createSelector
+} from '@ngrx/store';
 
 import {
   TrainingActions,
@@ -13,7 +17,7 @@ import * as fromRoot from '../app.reducer';
 export interface TrainingState {
   availableExercises: Exercise[];
   finishedExercises: Exercise[];
-  activeExercise: Exercise;
+  activeTraining: Exercise;
 }
 
 export interface State extends fromRoot.State {
@@ -23,7 +27,7 @@ export interface State extends fromRoot.State {
 const initialState: TrainingState = {
   availableExercises: [],
   finishedExercises: [],
-  activeExercise: null
+  activeTraining: null
 };
 
 export function trainingReducer(state = initialState, action: TrainingActions) {
@@ -53,6 +57,7 @@ export function trainingReducer(state = initialState, action: TrainingActions) {
   }
 }
 
+export const getTrainingState = createFeatureSelector<TrainingState>('training');
 export const getAvailableExercises = (state: TrainingState) => state.availableExercises;
 export const getFinishedExercises = (state: TrainingState) => state.finishedExercises;
-export const getActiveExercise = (state: TrainingState) => state.activeExercise;
+export const getActiveTraining = (state: TrainingState) => state.activeTraining;
