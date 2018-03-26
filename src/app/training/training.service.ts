@@ -13,6 +13,7 @@ import * as fromTraining from './training.reducer';
 @Injectable()
 export class TrainingService {
   exercisesChanged = new Subject<Exercise[]>();
+  finishedExercisesChanged = new Subject<Exercise[]>();
 
   private runningExercise: Exercise;
   private fbSubs: Subscription[] = [];
